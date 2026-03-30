@@ -1,0 +1,12 @@
+2025 paper folders and PDF filenames
+
+1. maginet2025/maginet2025_paper.pdf
+2. pattern_bank2025/pattern_bank2025_paper.pdf
+3. carbon_signal_control2025/carbon_signal_control2025_paper.pdf
+4. metacity2025/metacity2025_paper.pdf
+5. safety_critical_sim2025/safety_critical_sim2025_paper.pdf
+
+Current categorization on the publications page
+- Conference Papers: safety_critical_sim2025
+- CNS Sub-journals: carbon_signal_control2025
+- Transactions and Journals: maginet2025, pattern_bank2025, metacity2025

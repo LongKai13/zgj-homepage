@@ -9,56 +9,41 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+<div class="cv-section">
+  <h2>Appointment</h2>
+  <ul>
+    <li>Associate Professor (tenure-track), John Hopcroft Center for Computer Science, Shanghai Jiao Tong University, 2020-present</li>
+  </ul>
+</div>
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+<div class="cv-section">
+  <h2>Education</h2>
+  <ul>
+    <li>Ph.D. in Information Sciences and Technology, The Pennsylvania State University, 2020</li>
+    <li>B.Eng. in Electrical Engineering, Shanghai Jiao Tong University, 2015</li>
+  </ul>
+</div>
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+<div class="cv-section">
+  <h2>Research Interests</h2>
+  <ul>
+    <li>Data-driven intelligent decision making</li>
+    <li>Spatial-temporal data mining</li>
+    <li>Urban computing and intelligent transportation</li>
+    <li>Graph learning, forecasting, simulation, and control</li>
+    <li>Scientific data intelligence</li>
+  </ul>
+</div>
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+<div class="cv-section">
+  <h2>Contact</h2>
+  <ul>
+    <li>Email: <a href="mailto:gjzheng@sjtu.edu.cn">gjzheng@sjtu.edu.cn</a></li>
+    <li>Office: SEIEE Building, Shanghai Jiao Tong University, 800 Dongchuan Road, Shanghai 200240, China</li>
+    <li>Google Scholar: <a href="https://scholar.google.com.hk/citations?hl=zh-CN&amp;user=jJpqDQIAAAAJ">Profile</a></li>
+  </ul>
+  <div class="cv-links">
+    <a class="btn" href="{{ base_path }}/publications/">Browse Publications</a>
+    <a class="btn btn--inverse" href="mailto:gjzheng@sjtu.edu.cn">Email</a>
+  </div>
+</div>

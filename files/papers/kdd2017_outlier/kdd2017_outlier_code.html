@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>kdd</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<h1>Contextual Spatial Outlier Detection with Metric Learning</h1>
+
+<h2>Project description</h2>
+
+<p>This project is conducted by <a href="http://www.personal.psu.edu/~gjz5038/">Guanjie Zheng</a>, <a href="http://www.essc.psu.edu/~sxb7/">Susan L. Brantley</a> and <a href="https://faculty.ist.psu.edu/jessieli/Site/index.html">Zhenhui (Jessie) Li</a> from Pennsylvania State University. </p> 
+
+<p>The project is motivated by a real world envioronmental problem -- hydraulic fracking. Hydraulic fracturing (or “fracking”) is a revolutionary well stimulation technique for shale gas extraction, but has spawned controversy in environmental contamination. If methane from gas wells
+leaks extensively, this greenhouse gas can impact drinking water
+wells and enhance global warming. Recently, some geologists raise the concern that fracking can pollute the nearby groundwater and air. </p>
+
+<p>So we propose to use data mining technique to find anomalous water or air samples which may indicate potential leakage. We further extend this to a general contextual spatial outlier detection problem, which can deal with many spatial datasets. </p>
+
+<p>We developed a contextual spatial outlier detection technique, using both spatial and non-spatial contextual attributes to find contextual neighbors. We combine the attributes using robust metric learning.</p>
+
+<p>We conduct extensive experiments on 5 real datasets and our method outperforms the baseline on all of these datasets.</p>
+
+<h2>Dataset</h2>
+
+<p>We used five datasets to demonstrate that our method has a better performance. These datasets are:</p>
+
+<h3>Water:</h3> This dataset contains 1,645 data samples of the methane concentration in groundwater in Pennsylvania. Each sample has 11 contextual attributes (i.e., features) describing sampling location and nearby emission sources. The behavioral attribute is the methane concentration measured in groundwater sample, which ranges from 1 to 46,500 ppb. The outliers found in this dataset could potentially indicate shale gas leakage problem.
+
+<h3>Air:</h3> This dataset contains 34,100 data samples of the methane concentration in the atmosphere collected in the United States. There are 30 contextual attributes describing the meteorology, geography, and emission sources near the sampling locations. Similar to water dataset, the behavioral attribute is methane concentration measured in atmosphere. The methane concentration values range from 0 to 1,420 ppb. 
+
+<h3>Zillow:</h3> This dataset contains 1,511 house selling records in State College, Pennsylvania, from year 2014 to 2016. The sold price ranges from $100,000 to $975,000. The contextual attributes describing the real estate properties include latitude, longitude, square feet, year of built (7 attributes in total) We use the most recent sold price as the behavioral attribute. This data is collected from <a href=" http://www.zillow.com/">Zillow API</a>.
+
+<h3>El Nino:</h3> This dataset contains 93,935 samples in the equatorial Pacific. The contextual attributes are oceanographic and surface meteorological variables (6 contextual attributes in total) and the behavioral attribute is sea surface temperature. This dataset is downloaded from <a href="https://archive.ics.uci.edu/ml/datasets/El+Nino">UCI repository</a>.
+
+<h3>Hydro:</h3>  This dataset contains 308 records describing the relationship between the shape of a ship and the residuary resistance that the ship bares in water. The longitudinal position of the buoyancy and five shape parameters of the ship are used as contextual attributes. The behavioral attribute is the residuary resistance. This dataset is downloaded from <a href="https://archive.ics.uci.edu/ml/datasets/Yacht+Hydrodynamics">UCI repository</a>.
+
+
+<h2>Code</h2>
+
+<p>The code is <a href="kdd2017_outlier_code.zip" class="btn btn-info btn-sm">here</a>. Please run "bash runexp.sh" in the experiment/outlier_detection/python folder.</p>
+
+</body>
+</html>

@@ -5,32 +5,282 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<div class="publication-intro">
+  You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.
+  Here, <strong>#</strong> indicates corresponding author and <strong>*</strong> indicates equal contribution when applicable.
+</div>
 
 
+<div class="publication-section">
+  <h2>Selected Publications</h2>
 
+  <h3 class="publication-year">2025</h3>
+      <ul>
+    <li>
+      <p>Yunke Zhang, Yuming Lin, <strong>Guanjie Zheng</strong>, Yu Liu, Nicholas Sukiennik, Fengli Xu, Yongjun Xu, Feng Lu, Qi Wang, Yuan Lai, Li Tian, Nan Li, Dongping Fang, Fei Wang, Tao Zhou, Yong Li, Yu Zheng, Zhiqiang Wu, Huadong Guo. MetaCity: Data-driven sustainable development of complex cities. <i>The Innovation</i>, 2025. (<a href="{{ base_path }}/files/papers/metacity2025/metacity2025_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Kan Wu, Jianrong Ding, Jingli Lin, <strong>Guanjie Zheng</strong>, Yi Sun, Jie Fang, Tu Xu, Yongdong Zhu, Baojing Gu. Big-data empowered traffic signal control could reduce urban carbon emission. <i>Nature Communications</i>, 2025. (<a href="{{ base_path }}/files/papers/carbon_signal_control2025/carbon_signal_control2025_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Zherui Huang, Xing Gao, <strong>Guanjie Zheng</strong>#, Licheng Wen, Xuemeng Yang, Xiao Sun. Safety-critical traffic simulation with adversarial transfer of driving intentions. <i>In 2025 IEEE International Conference on Robotics and Automation (ICRA 2025).</i> (<a href="{{ base_path }}/files/papers/safety_critical_sim2025/safety_critical_sim2025_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+    <ul>
+    <li>
+      <p>Jianping Zhou, Bin Lu, Zhanyu Liu, Siyu Pan, Xuejun Feng, Hua Wei, <strong>Guanjie Zheng</strong>#, Xinbing Wang, Chenghu Zhou. MagiNet: Mask-Aware Graph Imputation Network for Incomplete Traffic Data. <i>ACM Transactions on Knowledge Discovery from Data</i>, 2025. (<a href="{{ base_path }}/files/papers/maginet2025/maginet2025_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Zhanyu Liu, <strong>Guanjie Zheng</strong>#, Yanwei Yu. Multi-scale Traffic Pattern Bank for Cross-city Few-shot Traffic Forecasting. <i>ACM Transactions on Knowledge Discovery from Data</i>, 2025. (<a href="{{ base_path }}/files/papers/pattern_bank2025/pattern_bank2025_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+
+  <h3 class="publication-year">2024</h3>
+  <ul>
+    <li>
+      <p>Zhanyu Liu, Chaolv Zeng, <strong>Guanjie Zheng</strong>#. Graph Data Condensation via Self-Expressive Graph Structure Reconstruction. <i>In Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2024).</i> (<a href="{{ base_path }}/files/papers/kdd2024_GCSR/kdd2024_GCSR_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Zhanyu Liu, Ke Hao, <strong>Guanjie Zheng</strong>#, Yanwei Yu. Dataset Condensation for Time Series Classification via Dual Domain Matching. <i>In Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2024).</i> (<a href="{{ base_path }}/files/papers/kdd2024_CondTSC/kdd2024_CondTSC_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Yiheng Wang, <strong>Guanjie Zheng</strong>#, Hexi Jin, Yi Sun, Kan Wu, Jie Fang. Precise Control Balances Epidemic Mitigation and Economic Growth. <i>npj Urban Sustainability</i>, 2024. (<a href="{{ base_path }}/files/papers/npj2024_hc/npj2024_hc_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Zhanyu Liu, Jianrong Ding, <strong>Guanjie Zheng</strong>#. Frequency Enhanced Pre-training for Cross-city Few-shot Traffic Forecasting. <i>In European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2024).</i> (<a href="{{ base_path }}/files/papers/pkdd2024_FEPCross/pkdd2024_FEPCross_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Zhixin Guo, Jianping Zhou, Jiexing Qi, Mingxuan Yan, Ziwei He, <strong>Guanjie Zheng</strong>#, Zhouhan Lin, Xinbing Wang, Chenghu Zhou. Towards Controlled Table-to-Text Generation with Scientific Reasoning. <i>In IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2024).</i> (<a href="{{ base_path }}/files/papers/ICASSP2024/ICASSP2024_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Zhixin Guo, Chaoyang Wang, Jianping Zhou, <strong>Guanjie Zheng</strong>#, Xinbing Wang, Chenghu Zhou. GeoKnowledgeFusion: A Platform for Multimodal Data Compilation from Geoscience Literature. <i>Remote Sensing</i>, 2024. (<a href="{{ base_path }}/files/papers/remotesensing2024/remotesensing2024_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+
+  <h3 class="publication-year">2023</h3>
+  <ul>
+    <li>
+      <p>Chumeng Liang, Zherui Huang, Yicheng Liu, Zhanyu Liu, <strong>Guanjie Zheng</strong>#, Hanyuan Shi, Kan Wu, Yuhao Du, Fuliang Li, Zhenhui Li. CBLab: Supporting the Training of Large-scale Traffic Control Policies with Scalable Traffic Simulation. <i>In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2023).</i> (<a href="{{ base_path }}/files/papers/kdd2023_cblab/kdd2023_cblab_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Zhanyu Liu, <strong>Guanjie Zheng</strong>#, Yanwei Yu. Cross-city Few-Shot Traffic Forecasting via Traffic Pattern Bank. <i>In Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (CIKM 2023).</i> (<a href="{{ base_path }}/files/papers/cikm2023_cross/cikm2023_cross_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Zhanyu Liu, Chumeng Liang, <strong>Guanjie Zheng</strong>#, Hua Wei. FDTI: Fine-Grained Deep Traffic Inference with Roadnet-Enriched Graph. <i>In European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2023).</i> (<a href="{{ base_path }}/files/papers/pkdd2023_fdti/pkdd2023_fdti_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Hao Mei, Junxian Li, Zhiming Liang, <strong>Guanjie Zheng</strong>, Bin Shi, Hua Wei. Uncertainty-aware Traffic Prediction under Missing Data. <i>In IEEE International Conference on Data Mining (ICDM 2023).</i> (<a href="{{ base_path }}/files/papers/icdm2023/icdm2023_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Chaofan Fu, <strong>Guanjie Zheng</strong>, Chao Huang, Yanwei Yu, Junyu Dong. Multiplex Heterogeneous Graph Neural Network with Behavior Pattern Modeling. <i>In Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2023).</i> (<a href="{{ base_path }}/files/papers/kdd2023_bphgnn/kdd2023_bphgnn_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+
+  <h3 class="publication-year">2022</h3>
+  <ul>
+    <li>
+      <p>Yiheng Wang, Hexi Jin, <strong>Guanjie Zheng</strong>#. CTRL: Cooperative Traffic Tolling via Reinforcement Learning. <i>In Proceedings of the 31st ACM International Conference on Information &amp; Knowledge Management (CIKM 2022).</i> (<a href="{{ base_path }}/files/papers/cikm2022_ctrl/cikm2022_ctrl_paper.pdf">PDF</a>) (<a href="{{ base_path }}/files/papers/cikm2022_ctrl/cikm2022_ctrl_slides.pdf">Slides</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Muchao Ye, Junyu Luo, <strong>Guanjie Zheng</strong>, Cao Xiao, Houping Xiao, Ting Wang, Fenglong Ma. MedAttacker: Exploring Black-Box Adversarial Attacks on Risk Prediction Models in Healthcare. <i>In IEEE International Conference on Bioinformatics and Biomedicine (BIBM 2022).</i> (<a href="{{ base_path }}/files/papers/bibm2022_medattacker/bibm2022_medattacker_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Tao Wen, Chacha Chen, <strong>Guanjie Zheng</strong>, Joel Bandstra, Susan L. Brantley. CTRL: Using a Neural Network-Physics-Based Hybrid Model to Predict Soil Reaction Fronts. <i>Computers &amp; Geosciences</i>, 2022. (<a href="{{ base_path }}/files/papers/c%26g2022/c%26g2022_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+
+  <h3 class="publication-year">2021</h3>
+  <ul>
+    <li>
+      <p><strong>Guanjie Zheng</strong>, Chang Liu, Hua Wei, Porter Jenkins, Chacha Chen, Tao Wen, Zhenhui Li. Knowledge-based Residual Learning. <i>In Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence (IJCAI 2021).</i> (<a href="{{ base_path }}/files/papers/ijcai2021_knowledge/ijcai2021_knowledge_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p><strong>Guanjie Zheng</strong>, Hanyang Liu, Kai Xu, Zhenhui Li. Objective-aware Traffic Simulation via Inverse Reinforcement Learning. <i>In Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence (IJCAI 2021).</i> (<a href="{{ base_path }}/files/papers/ijcai2021_object/ijcai2021_object_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Hua Wei, Chacha Chen, Chang Liu, <strong>Guanjie Zheng</strong>, Zhenhui Li. Learning to Simulate on Sparse Trajectory Data. <i>In Machine Learning and Knowledge Discovery in Databases: Applied Data Science Track (ECML PKDD 2021).</i> (<a href="{{ base_path }}/files/papers/pkdd2020_learning/pkdd2020_learning_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p><strong>Guanjie Zheng</strong>*, Chang Liu*, Hua Wei, Chacha Chen, Zhenhui Li. Rebuilding City-Wide Traffic Origin-Destination from Road Speed Data. <i>In Proceedings of the 2021 IEEE 37th International Conference on Data Engineering (ICDE 2021).</i> (<a href="{{ base_path }}/files/papers/icde2021_rebuilding/icde2021_rebuilding_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Hua Wei, <strong>Guanjie Zheng</strong>, Vikash Gayah, Zhenhui Li. Recent Advances in Reinforcement Learning for Traffic Signal Control: A Survey of Models and Evaluation. <i>ACM SIGKDD Explorations Newsletter</i>, 2021. (<a href="{{ base_path }}/files/papers/kddEN2021/kddEN2021_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Tao Wen, Mengqi Liu, Josh Woda, <strong>Guanjie Zheng</strong>, Susan L. Brantley. Detecting Anomalous Methane in Groundwater within Hydrocarbon Production Areas across the United States. <i>Water Research</i>, 2021. (<a href="{{ base_path }}/files/papers/water2021/water2021_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+
+  <h3 class="publication-year">2020</h3>
+  <ul>
+    <li>
+      <p>Huichu Zhang, Chang Liu, Weinan Zhang, <strong>Guanjie Zheng</strong>, Yong Yu. GeneraLight: Improving Environment Generalization of Traffic Signal Control via Meta Reinforcement Learning. <i>In Proceedings of the 29th ACM International Conference on Information &amp; Knowledge Management (CIKM 2020).</i> (<a href="{{ base_path }}/files/papers/cikm2022_generalight/cikm2022_generalight_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Hua Wei, Chacha Chen, Chang Liu, <strong>Guanjie Zheng</strong>, Zhenhui Li. Learning to Simulate on Sparse Trajectory Data. <i>In Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2020).</i> (<a href="{{ base_path }}/files/papers/pkdd2020_learning/pkdd2020_learning_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Chacha Chen, Hua Wei, Nan Xu, <strong>Guanjie Zheng</strong>, Ming Yang, Yuanhao Xiong, Kai Xu, Zhenhui Li. Toward A Thousand Lights: Decentralized Deep Reinforcement Learning for Large-Scale Traffic Signal Control. <i>In Proceedings of the Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI 2020).</i> (<a href="{{ base_path }}/files/papers/aaai2020_toward/aaai2020_toward_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Xinshi Zang, Huaxiu Yao, <strong>Guanjie Zheng</strong>, Nan Xu, Kai Xu, Zhenhui Li. MetaLight: Value-based Meta-Reinforcement Learning for Traffic Signal Control. <i>In Proceedings of the Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI 2020).</i> (<a href="{{ base_path }}/files/papers/aaai2020_metalight/aaai2020_metalight_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p><strong>Guanjie Zheng</strong>*, Hanyang Liu*, Kai Xu, Zhenhui Li. Learning to Simulate Vehicle Trajectories from Demonstrations. <i>In Proceedings of the 2020 IEEE 36th International Conference on Data Engineering (ICDE 2020, short paper).</i> (<a href="{{ base_path }}/files/papers/icde2020_learn_sim/icde2020_learn_sim_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+
+  <h3 class="publication-year">2019</h3>
+  <ul>
+    <li>
+      <p><strong>Guanjie Zheng</strong>, Yuanhao Xiong, Xinshi Zang, Jie Feng, Hua Wei, Huichu Zhang, Yong Li, Kai Xu, Zhenhui Li. Learning Phase Competition for Traffic Signal Control. <i>In Proceedings of the 28th ACM International Conference on Information and Knowledge Management (CIKM 2019).</i> (<a href="{{ base_path }}/files/papers/cikm2019_frap/cikm2019_frap_paper.pdf">PDF</a>) (<a href="https://traffic-signal-control.github.io/">Code</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Hua Wei, Nan Xu, Huichu Zhang, <strong>Guanjie Zheng</strong>, Xinshi Zang, Chacha Chen, Weinan Zhang, Yanmin Zhu, Kai Xu, Zhenhui Li. CoLight: Learning Network-level Cooperation for Traffic Signal Control. <i>In Proceedings of the 28th ACM International Conference on Information and Knowledge Management (CIKM 2019).</i> (<a href="{{ base_path }}/files/papers/cikm2019_colight/cikm2019_colight_paper.pdf">PDF</a>) (<a href="https://traffic-signal-control.github.io/">Code</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Yuanhao Xiong, <strong>Guanjie Zheng</strong>, Kai Xu, Zhenhui Li. Learning Traffic Signal Control from Demonstrations. <i>In Proceedings of the 28th ACM International Conference on Information and Knowledge Management (CIKM 2019).</i> (<a href="{{ base_path }}/files/papers/cikm2019_demolight/cikm2019_demolight_paper.pdf">PDF</a>) (<a href="https://traffic-signal-control.github.io/">Code</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Hua Wei, Chacha Chen, <strong>Guanjie Zheng</strong>, Kan Wu, Vikash V. Gayah, Kai Xu, Zhenhui Li. PressLight: Learning Max Pressure Control to Coordinate Traffic Signals in Arterial Networks. <i>In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD 2019).</i> (<a href="{{ base_path }}/files/papers/kdd2019_presslight/kdd2019_presslight_paper.pdf">PDF</a>) (<a href="https://traffic-signal-control.github.io/">Code</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Nan Xu, <strong>Guanjie Zheng</strong>, Kai Xu, Yanmin Zhu, Zhenhui Li. Targeted Transfer Reinforcement Learning for Traffic Signal Control in a Hierarchical Framework. <i>In Proceedings of the 23rd Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD 2019).</i> (<a href="{{ base_path }}/files/papers/pakdd2019_ttrl/pakdd2019_ttrl_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Huaxiu Yao*, Xianfeng Tang*, Hua Wei, <strong>Guanjie Zheng</strong>, Zhenhui Li. Revisiting Spatial-Temporal Similarity: A Deep Learning Framework for Traffic Prediction. <i>In Proceedings of the Thirty-Third AAAI Conference on Artificial Intelligence (AAAI 2019).</i> (<a href="{{ base_path }}/files/papers/aaai2019_stdn/aaai2019_stdn_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+
+  <h3 class="publication-year">2018</h3>
+  <ul>
+    <li>
+      <p>Hua Wei*, <strong>Guanjie Zheng</strong>*, Huaxiu Yao, Zhenhui Li. IntelliLight: A Reinforcement Learning Approach for Intelligent Traffic Light Control. <i>In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining (KDD 2018).</i> (<a href="{{ base_path }}/files/papers/kdd2018_intellilight/kdd2018_intellilight_paper.pdf">PDF</a>) (<a href="{{ base_path }}/files/papers/kdd2018_intellilight/kdd2018_intellilight_slides.pdf">Slides</a>) (<a href="{{ base_path }}/files/papers/kdd2018_intellilight/kdd2018_intellilight_code.zip">Code</a>) (<a href="https://www.youtube.com/watch?v=rorxzXbQ1DY">Video</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p><strong>Guanjie Zheng</strong>, Fuzheng Zhang, Zihan Zheng, Yang Xiang, Nicholas Jing Yuan, Xing Xie, Zhenhui Li. DRN: A Deep Reinforcement Learning Framework for News Recommendation. <i>In Proceedings of the 2018 World Wide Web Conference (WWW 2018).</i> (<a href="{{ base_path }}/files/papers/www2018_reinforceRec/www2018_reinforceRec.pdf">PDF</a>) (<a href="{{ base_path }}/files/papers/www2018_reinforceRec/www2018_reinforceRec_slides.pdf">Slides</a>)</p>
+    </li>
+  </ul>
+
+  <h3 class="publication-year">2017</h3>
+  <ul>
+    <li>
+      <p><strong>Guanjie Zheng</strong>, Susan L. Brantley, Thomas Lauvaux, Zhenhui Li. Contextual Spatial Outlier Detection with Metric Learning. <i>In Proceedings of the 2017 ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD 2017).</i> (<a href="{{ base_path }}/files/papers/kdd2017_outlier/kdd2017_outlier_paper.pdf">PDF</a>) (<a href="{{ base_path }}/files/papers/kdd2017_outlier/kdd2017_outlier_poster.pdf">Poster</a>) (<a href="https://www.youtube.com/watch?v=T5ivvvbUBuU&amp;t=4s">Video</a>) (<a href="{{ base_path }}/files/papers/kdd2017_outlier/kdd2017_outlier_code.html">Code</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p><strong>Guanjie Zheng</strong>, Fei Wu, Matthew Gonzales, Susan L. Brantley, Thomas Lauvaux, Zhenhui Li. Assessing Environmental Impacts of Shale-gas Development in an Area of Hydraulic Fracturing. <i>In KDD 2017 Workshop on Data Science for Intelligent Food, Energy, and Water (DSIFER 2017).</i> (<a href="{{ base_path }}/files/papers/dsifer2017_methane/dsifer2017_methane_paper.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Zhenhui Li, <strong>Guanjie Zheng</strong>, Amal Agarwal, Lingzhou Xue, Thomas Lauvaux. Discovery of Causal Time Intervals. <i>In Proceedings of the 2017 SIAM International Conference on Data Mining (SDM 2017).</i> (<a href="{{ base_path }}/files/papers/sdm2017_causality/sdm2017_causality_paper.pdf">PDF</a>) (<a href="https://github.com/gjzheng93/causality-pub">Code</a>)</p>
+    </li>
+  </ul>
+</div>
+
+<!---
+<div class="publication-section">
+  <h2>Journal Publications</h2>
+  <ul>
+    <li>
+      <p>Hua Wei, <strong>Guanjie Zheng</strong>, Vikash Gayah, Zhenhui Li. Recent Advances in Reinforcement Learning for Traffic Signal Control: A Survey of Models and Evaluation. <i>ACM SIGKDD Explorations Newsletter.</i></p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Anna K. Wendt, Todd Sowers, Scott Hynek, Jacob Lemon, Erika Beddings, <strong>Guanjie Zheng</strong>, Zhenhui Li, Jennifer Z. Williams, Susan L. Brantley. Scientist-Nonscientist Teams Explore Methane Sources in Streams Near Oil/Gas Development. <i>Journal of Contemporary Water Research Education.</i></p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Tao Wen, Xianzeng Niu, Matthew Gonzales, <strong>Guanjie Zheng</strong>, Zhenhui Li, Susan L. Brantley. Big Groundwater Data Sets Reveal Possible Rare Contamination amid Otherwise Improved Water Quality for Some Analytes in a Region of Marcellus Shale Development. <i>Environmental Science &amp; Technology.</i></p>
+    </li>
+  </ul>
+</div>
+
+<div class="publication-section">
+  <h2>Preprints</h2>
+  <ul>
+    <li>
+      <p>Chumeng Liang, Zherui Huang, Yicheng Liu, Zhanyu Liu, <strong>Guanjie Zheng</strong>, Hanyuan Shi, Yuhao Du, Fuliang Li, Zhenhui Li. CBLab: Scalable Traffic Simulation with Enriched Data Supporting. <i>arXiv preprint arXiv:2210.00896</i>, 2022. (<a href="https://arxiv.org/pdf/2210.00896.pdf">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p><strong>Guanjie Zheng</strong>, Mengqi Liu, Tao Wen, Hongjian Wang, Huaxiu Yao, Susan L. Brantley, Zhenhui Li. Targeted Source Detection for Environmental Data. <i>arXiv preprint arXiv:1908.11056</i>, 2019. (<a href="https://arxiv.org/abs/1908.11056">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p><strong>Guanjie Zheng</strong>, Xinshi Zang, Nan Xu, Hua Wei, Zhengyao Yu, Vikash Gayah, Kai Xu, Zhenhui Li. Diagnosing Reinforcement Learning for Traffic Signal Control. <i>arXiv preprint arXiv:1905.04716</i>, 2019. (<a href="https://arxiv.org/abs/1905.04716">PDF</a>)</p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <p>Hua Wei, <strong>Guanjie Zheng</strong>, Vikash Gayah, Zhenhui Li. A Survey on Traffic Signal Control Methods. <i>arXiv preprint arXiv:1904.08117</i>, 2019. (<a href="https://arxiv.org/abs/1904.08117">PDF</a>)</p>
+    </li>
+  </ul>
+</div>
+-->

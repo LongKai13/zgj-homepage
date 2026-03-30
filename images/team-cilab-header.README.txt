@@ -1,0 +1,5 @@
+Place the Team page header image here with the exact filename:
+
+Gemini_Generated_Image_ozjeycozjeycozje.png
+
+Once this file exists in /images, the Team page hero will use it automatically.
